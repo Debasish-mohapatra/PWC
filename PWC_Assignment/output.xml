@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.5 on win32)" generated="20220420 15:14:37.138" rpa="false">
+<suite id="s1" name="PWC Assignment" source="C:\Users\Debasish\wp2\PWC_Assignment">
+<suite id="s1-s1" name="Scripts" source="C:\Users\Debasish\wp2\PWC_Assignment\Scripts">
+<suite id="s1-s1-s1" name="ToolsQA" source="C:\Users\Debasish\wp2\PWC_Assignment\Scripts\ToolsQA.robot">
+<test id="s1-s1-s1-t1" name="TestCase_01">
+<kw name="Fectch data from excel sheet" library="ToolsQA_Keywords" type="setup">
+<kw name="Open Excel" library="ExcelRobot">
+<doc>Opens the Excel file to read from the path provided in the file path parameter.</doc>
+<arguments>
+<arg>PWC_ParameterSheet.xls</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.244" level="INFO">Opening file at C:\Users\Debasish\wp2\PWC_Assignment\PWC_ParameterSheet.xls</msg>
+<status status="PASS" starttime="20220420 15:14:41.243" endtime="20220420 15:14:41.276"></status>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>0</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${fiestname}</var>
+</assign>
+<msg timestamp="20220420 15:14:41.279" level="INFO">${fiestname} = Debasish</msg>
+<status status="PASS" starttime="20220420 15:14:41.277" endtime="20220420 15:14:41.280"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${fname}</arg>
+<arg>${fiestname}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.282" level="INFO">${fname} = Debasish</msg>
+<status status="PASS" starttime="20220420 15:14:41.280" endtime="20220420 15:14:41.283"></status>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>1</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${lastname}</var>
+</assign>
+<msg timestamp="20220420 15:14:41.286" level="INFO">${lastname} = Mohapatra</msg>
+<status status="PASS" starttime="20220420 15:14:41.284" endtime="20220420 15:14:41.286"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${lname}</arg>
+<arg>${lastname}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.289" level="INFO">${lname} = Mohapatra</msg>
+<status status="PASS" starttime="20220420 15:14:41.288" endtime="20220420 15:14:41.290"></status>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>2</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${email}</var>
+</assign>
+<msg timestamp="20220420 15:14:41.293" level="INFO">${email} = debasish.mohapatra@rocketmail.com</msg>
+<status status="PASS" starttime="20220420 15:14:41.291" endtime="20220420 15:14:41.293"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${mail}</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.295" level="INFO">${mail} = debasish.mohapatra@rocketmail.com</msg>
+<status status="PASS" starttime="20220420 15:14:41.294" endtime="20220420 15:14:41.296"></status>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>3</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${gender}</var>
+</assign>
+<msg timestamp="20220420 15:14:41.298" level="INFO">${gender} = Male</msg>
+<status status="PASS" starttime="20220420 15:14:41.296" endtime="20220420 15:14:41.298"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${gen}</arg>
+<arg>${gender}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.300" level="INFO">${gen} = Male</msg>
+<status status="PASS" starttime="20220420 15:14:41.299" endtime="20220420 15:14:41.300"></status>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>4</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${mobile_number}</var>
+</assign>
+<msg timestamp="20220420 15:14:41.303" level="INFO">${mobile_number} = 9,776,524,681.00</msg>
+<status status="PASS" starttime="20220420 15:14:41.302" endtime="20220420 15:14:41.304"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>${mobile_number}</arg>
+</arguments>
+<assign>
+<var>${mobile_number}</var>
+</assign>
+<msg timestamp="20220420 15:14:41.306" level="INFO">${mobile_number} = 9,776,524,681.00</msg>
+<status status="PASS" starttime="20220420 15:14:41.305" endtime="20220420 15:14:41.307"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${mnumber}</arg>
+<arg>${mobile_number}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.310" level="INFO">${mnumber} = 9,776,524,681.00</msg>
+<status status="PASS" starttime="20220420 15:14:41.308" endtime="20220420 15:14:41.311"></status>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>5</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${date}</var>
+</assign>
+<msg timestamp="20220420 15:14:41.314" level="INFO">${date} = 20-04-2022</msg>
+<status status="PASS" starttime="20220420 15:14:41.312" endtime="20220420 15:14:41.314"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${dob}</arg>
+<arg>${date}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.317" level="INFO">${dob} = 20-04-2022</msg>
+<status status="PASS" starttime="20220420 15:14:41.315" endtime="20220420 15:14:41.317"></status>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>6</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${subject}</var>
+</assign>
+<msg timestamp="20220420 15:14:41.319" level="INFO">${subject} = Computer</msg>
+<status status="PASS" starttime="20220420 15:14:41.318" endtime="20220420 15:14:41.320"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${sub}</arg>
+<arg>${subject}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.322" level="INFO">${sub} = Computer</msg>
+<status status="PASS" starttime="20220420 15:14:41.320" endtime="20220420 15:14:41.323"></status>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>7</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${Hobbies}</var>
+</assign>
+<msg timestamp="20220420 15:14:41.325" level="INFO">${Hobbies} = Sports</msg>
+<status status="PASS" starttime="20220420 15:14:41.324" endtime="20220420 15:14:41.326"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${hob}</arg>
+<arg>${Hobbies}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.328" level="INFO">${hob} = Sports</msg>
+<status status="PASS" starttime="20220420 15:14:41.327" endtime="20220420 15:14:41.329"></status>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>8</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${filepath}</var>
+</assign>
+<msg timestamp="20220420 15:14:41.330" level="INFO">${filepath} = CUsersDebasishDocuments\Business Card 02-Dec-2020_1.jpg</msg>
+<status status="PASS" starttime="20220420 15:14:41.329" endtime="20220420 15:14:41.331"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${fpath}</arg>
+<arg>${filepath}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.332" level="INFO">${fpath} = CUsersDebasishDocuments\Business Card 02-Dec-2020_1.jpg</msg>
+<status status="PASS" starttime="20220420 15:14:41.331" endtime="20220420 15:14:41.333"></status>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>9</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${current_Address}</var>
+</assign>
+<msg timestamp="20220420 15:14:41.334" level="INFO">${current_Address} = 956/2977, prakruti vihar, baramunda</msg>
+<status status="PASS" starttime="20220420 15:14:41.333" endtime="20220420 15:14:41.335"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${address}</arg>
+<arg>${current_Address}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.336" level="INFO">${address} = 956/2977, prakruti vihar, baramunda</msg>
+<status status="PASS" starttime="20220420 15:14:41.335" endtime="20220420 15:14:41.337"></status>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>10</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${state}</var>
+</assign>
+<msg timestamp="20220420 15:14:41.338" level="INFO">${state} = NCR</msg>
+<status status="PASS" starttime="20220420 15:14:41.337" endtime="20220420 15:14:41.338"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${st}</arg>
+<arg>${state}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.340" level="INFO">${st} = NCR</msg>
+<status status="PASS" starttime="20220420 15:14:41.339" endtime="20220420 15:14:41.341"></status>
+</kw>
+<kw name="Read Cell Data" library="ExcelRobot">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>11</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${city}</var>
+</assign>
+<msg timestamp="20220420 15:14:41.344" level="INFO">${city} = Delhi</msg>
+<status status="PASS" starttime="20220420 15:14:41.342" endtime="20220420 15:14:41.344"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${ct}</arg>
+<arg>${city}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.346" level="INFO">${ct} = Delhi</msg>
+<status status="PASS" starttime="20220420 15:14:41.345" endtime="20220420 15:14:41.347"></status>
+</kw>
+<status status="PASS" starttime="20220420 15:14:41.242" endtime="20220420 15:14:41.348"></status>
+</kw>
+<kw name="Open Browser and Navigate to Tools QA" library="ToolsQA_Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://demoqa.com/automation-practice-form</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20220420 15:14:41.351" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<status status="PASS" starttime="20220420 15:14:41.350" endtime="20220420 15:14:48.872"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220420 15:14:48.874" endtime="20220420 15:14:49.044"></status>
+</kw>
+<status status="PASS" starttime="20220420 15:14:41.348" endtime="20220420 15:14:49.046"></status>
+</kw>
+<kw name="Fill Student registartion form" library="ToolsQA_Keywords">
+<kw name="Enter first name" library="ToolsQA_PageObjects">
+<doc>This keyword will enter first name in UI</doc>
+<arguments>
+<arg>${fname}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstname}</arg>
+<arg>${arg}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:49.054" level="INFO">Typing text 'Debasish' into text field '//input[@id="firstName"]'.</msg>
+<status status="PASS" starttime="20220420 15:14:49.052" endtime="20220420 15:14:49.357"></status>
+</kw>
+<status status="PASS" starttime="20220420 15:14:49.049" endtime="20220420 15:14:49.360"></status>
+</kw>
+<kw name="Enter last name" library="ToolsQA_PageObjects">
+<doc>This keyword will enter last name in UI</doc>
+<arguments>
+<arg>${lname}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastname}</arg>
+<arg>${arg}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:49.366" level="INFO">Typing text 'Mohapatra' into text field '//input[@id="lastName"]'.</msg>
+<status status="PASS" starttime="20220420 15:14:49.364" endtime="20220420 15:14:49.734"></status>
+</kw>
+<status status="PASS" starttime="20220420 15:14:49.362" endtime="20220420 15:14:49.734"></status>
+</kw>
+<kw name="Enter email id" library="ToolsQA_PageObjects">
+<doc>This keyword will enter email id in UI</doc>
+<arguments>
+<arg>${mail}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${arg}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:49.738" level="INFO">Typing text 'debasish.mohapatra@rocketmail.com' into text field '//input[@id="userEmail"]'.</msg>
+<status status="PASS" starttime="20220420 15:14:49.737" endtime="20220420 15:14:50.028"></status>
+</kw>
+<status status="PASS" starttime="20220420 15:14:49.735" endtime="20220420 15:14:50.029"></status>
+</kw>
+<kw name="Select gender" library="ToolsQA_PageObjects">
+<doc>This keyword will select gender in UI</doc>
+<arguments>
+<arg>${gen}</arg>
+</arguments>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>document.getElementById("gender-radio-1").click();</arg>
+</arguments>
+<msg timestamp="20220420 15:14:50.032" level="INFO">Executing JavaScript:
+document.getElementById("gender-radio-1").click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220420 15:14:50.031" endtime="20220420 15:14:50.055"></status>
+</kw>
+<status status="PASS" starttime="20220420 15:14:50.030" endtime="20220420 15:14:50.057"></status>
+</kw>
+<kw name="Enter mobile number" library="ToolsQA_PageObjects">
+<doc>This keyword will enter mobile number in UI</doc>
+<arguments>
+<arg>${mnumber}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobile_number}</arg>
+<arg>${arg}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:50.062" level="INFO">Typing text '9,776,524,681.00' into text field '//input[@id="userNumber"]'.</msg>
+<status status="PASS" starttime="20220420 15:14:50.060" endtime="20220420 15:14:50.244"></status>
+</kw>
+<status status="PASS" starttime="20220420 15:14:50.058" endtime="20220420 15:14:50.245"></status>
+</kw>
+<kw name="Enter date fo birth" library="ToolsQA_PageObjects">
+<doc>This keyword will enter date of birth in UI</doc>
+<arguments>
+<arg>${dob}</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${date}</arg>
+</arguments>
+<status status="PASS" starttime="20220420 15:14:50.246" endtime="20220420 15:14:50.453"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${date}</arg>
+<arg>${arg}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:50.457" level="INFO">Typing text '20-04-2022' into text field '//input[@id="dateOfBirthInput"]'.</msg>
+<status status="PASS" starttime="20220420 15:14:50.454" endtime="20220420 15:14:50.901"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20220420 15:14:50.904" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20220420 15:14:50.905" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20220420 15:14:50.906" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20220420 15:14:50.902" endtime="20220420 15:14:50.931"></status>
+</kw>
+<status status="PASS" starttime="20220420 15:14:50.245" endtime="20220420 15:14:50.932"></status>
+</kw>
+<kw name="Enter subject" library="ToolsQA_PageObjects">
+<doc>This keyword will enter subject in UI</doc>
+<arguments>
+<arg>${sub}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${Subject}</arg>
+</arguments>
+<status status="PASS" starttime="20220420 15:14:50.935" endtime="20220420 15:14:51.235"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Subject}</arg>
+<arg>${arg}</arg>
+</arguments>
+<msg timestamp="20220420 15:14:51.236" level="INFO">Typing text 'Computer' into text field '//div[@id="subjectsContainer"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220420 15:14:51.567" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220420 15:14:51.268" endtime="20220420 15:14:51.568"></status>
+</kw>
+<msg timestamp="20220420 15:14:51.703" level="FAIL">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=100.0.4896.127)
+</msg>
+<status status="FAIL" starttime="20220420 15:14:51.236" endtime="20220420 15:14:51.703"></status>
+</kw>
+<status status="FAIL" starttime="20220420 15:14:50.933" endtime="20220420 15:14:51.704"></status>
+</kw>
+<status status="FAIL" starttime="20220420 15:14:49.047" endtime="20220420 15:14:51.705"></status>
+</kw>
+<status status="FAIL" starttime="20220420 15:14:41.240" endtime="20220420 15:14:51.707" critical="yes">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=100.0.4896.127)
+</status>
+</test>
+<status status="FAIL" starttime="20220420 15:14:37.291" endtime="20220420 15:14:51.712"></status>
+</suite>
+<status status="FAIL" starttime="20220420 15:14:37.283" endtime="20220420 15:14:51.718"></status>
+</suite>
+<status status="FAIL" starttime="20220420 15:14:37.233" endtime="20220420 15:14:51.724"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="PWC Assignment">PWC Assignment</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Scripts">PWC Assignment.Scripts</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="ToolsQA">PWC Assignment.Scripts.ToolsQA</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
